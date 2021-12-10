@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เรียนรู้แบบฟอร์ม</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+            <table>
+                <tr>
+                    <th colspan="2">Pizza Shop 2.0</th>
+                </tr>
+                <tr>
+                    <td>Name </td>
+                    <td style="padding: 5px;"> <input type="text" name="fname" id="fname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pizza Topping</td>
+                    <td>
+                        <input type="radio" id="supreme" name="topping" value="Supreme">
+                        <label for="supreme">Supreme</label><br>
+                        <input type="radio" id="vegetarian" name="topping" value="Vegetarian">
+                        <label for="vegetarian">Vegetarian</label><br>
+                        <input type="radio" id="hawaiian" name="topping" value="Hawaiian">
+                        <label for="hawaiian">Hawaiian</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pizza Sauce</td>
+                    <td class="select">
+                        <select name="sauce" id="sauce">
+                            <option value="Tomato">Tomato</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Optional Extras</td>
+                    <td>
+                        <input type="radio" name="extras" id="extras" value="extras_cheese">
+                        <label for="extras_cheese">Extra Cheese</label>
+                        <input type="radio" name="base" id="base" value="gluten_free_base">
+                        <label for="gluten_free_base">Gluten Free Base</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p for="instructions">Delivery Instructions: </p>
+                        <textarea name="instructions" id="instructions" cols="50" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Send my Order">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
