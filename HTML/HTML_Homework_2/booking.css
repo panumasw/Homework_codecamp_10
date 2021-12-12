@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap');
+
+* {
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.center {
+  margin: auto;
+  width: 30%;
+  border: 3px solid rgb(128, 0, 21);
+  padding: 10px;
+}
+
+input[type='number'] {
+  width: 100px;
+}
+
+input[type='date'] {
+  width: 200px;
+}
+
+button {
+  background-color: orangered; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+select {
+  width: 200px;
+}
+
+#currency {
+  width: 100px;
+}

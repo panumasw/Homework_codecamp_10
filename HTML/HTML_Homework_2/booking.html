@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css">
+
+</head>
+
+<body>
+    <div class="center">
+        <form action="#" method="get">
+            <table>
+                <tr>
+                    <td colspan="2"><label for="">Flying from</label></td>
+                    <td colspan="2"><label for="">To</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select name="flyfrom" id="">
+                            <option value="">Karachi, Pakistan</option>
+                        </select>
+                    </td>
+                    <td colspan="2">
+                        <select name="flyto" id="">
+                            <option value="">Isalamabad, Pakistan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="">Departing</label></td>
+                    <td colspan="2"><label for="">Returning</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="date" name="" id="flydate" value="">
+                    </td>
+                    <td colspan="2">
+                        <input type="date" name="" id="retdate">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Adult</td>
+                    <td>Child</td>
+                    <td>Infant</td>
+                    <td style="color: red;">Currency</td>
+                </tr>
+                <tr>
+                    <td> <input type="number" name="" id="" value="1"> </td>
+                    <td> <input type="number" name="" id="" value="1"> </td>
+                    <td> <input type="number" name="" id="" value="1"> </td>
+                    <td>
+                        <select name="currency" id="currency">
+                            <option value="">PKR</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><button>SEARCH</button></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <script>
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; //January is 0 so need to add 1 to make it 1!
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("flydate").setAttribute("min", today);
+        document.getElementById("retdate").setAttribute("min", today);
+        document.getElementById("flydate").value = today;
+    </script>
+</body>
+
+</html>
